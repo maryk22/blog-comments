@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/assets/css/style.css" />
+  </head>
+  <body>
+    <section class="section canvas1">
+      <canvas></canvas>
+      <div class="color-area">
+        <div class="color-input"><input type="color" id="color" /></div>
+
+        <button
+          class="color-option"
+          style="background-color: #1abc9c"
+          data-color="#1abc9c"
+        ></button>
+        <button
+          class="color-option"
+          style="background-color: #3498db"
+          data-color="#3498db"
+        ></button>
+        <button
+          class="color-option"
+          style="background-color: #34495e"
+          data-color="#34495e"
+        ></button>
+        <button
+          class="color-option"
+          style="background-color: #27ae60"
+          data-color="#27ae60"
+        ></button>
+        <button
+          class="color-option"
+          style="background-color: #8e44ad"
+          data-color="#8e44ad"
+        ></button>
+        <button
+          class="color-option"
+          style="background-color: #f1c40f"
+          data-color="#f1c40f"
+        ></button>
+        <button
+          class="color-option"
+          style="background-color: #e74c3c"
+          data-color="#e74c3c"
+        ></button>
+        <button
+          class="color-option"
+          style="background-color: #95a5a6"
+          data-color="#95a5a6"
+        ></button>
+        <button
+          class="color-option"
+          style="background-color: #d35400"
+          data-color="#d35400"
+        ></button>
+        <button
+          class="color-option"
+          style="background-color: #bdc3c7"
+          data-color="#bdc3c7"
+        ></button>
+        <button
+          class="color-option"
+          style="background-color: #2ecc71"
+          data-color="#2ecc71"
+        ></button>
+        <button
+          class="color-option"
+          style="background-color: #e67e22"
+          data-color="#e67e22"
+        ></button>
+      </div>
+      <div class="btn-area">
+        <span class="input-area">
+          <label for="line-width">line width</label>
+          <input
+            type="range"
+            id="line-width"
+            min="1"
+            max="10"
+            step="0.5"
+            value="5"
+          />
+        </span>
+        <span class="input-area">
+          <label for="lb-file" class="btn-blue">📷 File Choose</label>
+          <input type="file" id="lb-file" accept="image/*" class="blind" />
+        </span>
+        <span class="input-area text">
+          <label for="font-text">✍ Write and then double click</label>
+          <input
+            type="text"
+            placeholder="Write and then double click"
+            id="font-text"
+          />
+        </span>
+        <span class="input-area">
+          <label for="font-width">Font Size</label>
+          <input
+            type="range"
+            id="font-width"
+            min="12"
+            max="50"
+            step="1"
+            value="12"
+          />
+        </span>
+        <button id="btn-mode">✏️ Fill</button>
+        <button id="btn-destroy">🪠 Destroy</button>
+        <button id="btn-eraser">🧽 Eraser</button>
+        <button id="btn-save">🏞 Save Image</button>
+      </div>
+    </section>
+
+    <script src="index2.js"></script>
+  </body>
+</html>
